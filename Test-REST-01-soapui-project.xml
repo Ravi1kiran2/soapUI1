@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c13c4015-d0a1-4fe4-865f-d78640436f50" activeEnvironment="Default" name="Test_REST#01" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Program Files\SmartBear\SoapUI-5.4.0\bin\reports"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="05add82d-67b5-4f2b-bcd2-59c61f3f238d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://maps.googleapis.com</con:endpoint></con:endpoints><con:resource name="Xml" path="/maps/api/geocode/xml" id="e58dc552-fcd6-4a92-af36-c27aa66b5426"><con:settings/><con:parameters><con:parameter><con:name>address</con:name><con:value>1600 Amphitheatre Parkway, Mountain View, CA</con:value><con:style>QUERY</con:style><con:default>1600 Amphitheatre Parkway, Mountain View, CA</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>sensor</con:name><con:value>false</con:value><con:style>QUERY</con:style><con:default>false</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Xml 1" id="1fea74cf-77e9-42e2-bef2-7675b0a27836" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>GeocodeResponse</con:element></con:representation><con:request name="Request 1" id="289a3f1a-50cf-4189-b8d8-dfb44f0d6aed" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>http://maps.googleapis.com/maps/api/geocode/xml</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="address" value="1600 Amphitheatre Parkway, Mountain View, CA"/>
+  <con:entry key="sensor" value="false"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>sensor</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="4abcb838-d60d-4b68-8096-9816debaa525" name="TestSuite#01"><con:description>TestSuite generated for REST Service [http://maps.googleapis.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="18ee62ee-9d6d-4984-95e6-3db4ab79d9d3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Xml TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Xml] located at [/maps/api/geocode/xml]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="5662f2c5-e663-44f7-8a63-b2282dc8e2d9"><con:settings/><con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/xml" methodName="Xml 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="289a3f1a-50cf-4189-b8d8-dfb44f0d6aed" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>http://maps.googleapis.com/maps/api/geocode/xml</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="address" value="1600 Amphitheatre Parkway, Mountain View, CA"/>
+  <con:entry key="sensor" value="false"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>sensor</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="151e7a79-1716-4a25-96d8-ce0a230478eb"><con:settings/><con:config><script>import jxl.*
+Workbook wb = Workbook.getWorkbook(new File("C:/Users/Akula/Desktop/TestData.xlsx"))
+Sheet Sh = wb.getSheet(0)
+rc = sh.getRows()
+cc = sh.getColcout()
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script2" id="6c06ab94-f583-4652-abf1-63febd8dcd26"><con:settings/><con:config><script>import jxl.*                                // import library
+import jxl.write.*
+def fr = new File(“C:\\Users\Akula\\Desktop\\TestData.xlsx”)
+Workbook wk = Workbook.getWorkbook(fr);
+def s1 = wk.getSheet(0);
+def r = s1.getRows();
+for(def i=0;i&lt;r;i++)
+{
+def c1 = s1.getCell(0, i) 
+def c2 = s1.getCell(1, i)
+
+} </script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
